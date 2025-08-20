@@ -1,6 +1,6 @@
 Inspiration Behind This Project
 
-I was inspired to redesign Equity Housing’s website because I believe their student accommodation deserves a modern, easy-to-use online presence. While the real Equity Housing site exists, I felt I could create a version that better reflects the quality, safety, and community they provide for students. Unfortunately, I was never given the chance to officially build it — so this redesign is purely a personal project.
+I was inspired to redesign Equity Housing’s website because I believe their student accommodation deserves a modern, easy-to-use online presence. While the real Equity Housing site exists, I felt I could create a version that better reflects the quality, safety, and community they provide for students. Unfortunately, I was never given the chance to officially build it, so this redesign is purely a personal project.
 
 Disclaimer
 
