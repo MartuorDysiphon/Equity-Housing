@@ -5,7 +5,7 @@ I was inspired to redesign Equity Housing’s website because I believe their st
 Disclaimer
 
 This is not the official Equity Housing website.
-You can visit the real one at 👉 equityhousing.com
+You can visit the real one at 👉 equityhousing.co.za
 .
 
 All logos limited to the ones I redesigned, property photos, and original artwork used here belong to Equity Housing and are sourced directly from their official website. This project is simply a redesign concept created by Katlego MJ for educational and portfolio purposes.
