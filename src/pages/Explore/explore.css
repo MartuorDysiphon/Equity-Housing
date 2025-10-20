@@ -1,0 +1,96 @@
+.room__container {
+  margin-top: 3rem;
+}
+
+.room__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+}
+
+.room__card {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 400px;
+}
+
+.room__card__image {
+  position: relative;
+  isolation: isolate;
+}
+
+.acc__img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.room__card__icons {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem;
+  z-index: 1;
+}
+
+.room__card__icons span {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 1.5rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.room__card__icons span:nth-child(1) {
+  background-color: #ff0000;
+}
+
+.room__card__icons span:nth-child(2) {
+  background-color: #0410ff;
+}
+
+.room__card__icons span:nth-child(3) {
+  background-color: #727272;
+}
+
+.room__card__details {
+  padding: 1rem;
+}
+
+.room__card h4 {
+  /* margin-bottom: 0.5rem; */
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.room__card p {
+  margin-bottom: 17px;
+  color: var(--text-light);
+}
+
+.room__card h5 span {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+/* .service {
+  background-image: url("../../assets/quick/2.-Heather-Court-IMG_4916.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */

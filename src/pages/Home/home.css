@@ -1,0 +1,184 @@
+.home {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../../assets/headerbg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.home__header {
+    height: 90vh;
+    padding-top: 290px;
+
+    @media (max-width: 768px) {
+        padding-top: 200px;
+    }
+}
+
+.header__container p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  text-align: center;
+  opacity: 0.6;
+}
+
+.header__container h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 4.5rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.header__container h1 span {
+  color: var(--primary-color);
+}
+
+.booking__container {
+  padding-block: 0;
+}
+
+.booking__form {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  transform: translateY(-100%);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  background: rgb(255 255 255 / 80%);
+}
+
+.input__group {
+  flex: 1 1 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input__group span {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+}
+
+.form__title {
+  font-family: cursive;
+}
+
+.about__container {
+  overflow: hidden;
+  display: grid;
+  gap: 2rem;
+}
+
+.about__image img {
+  max-width: 450px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.btn1 {
+  padding: 15px;
+  border-top: 1px solid #e82525;
+  border-right: 1px solid #e82525;
+  border-radius: 15px;
+  font-size: 15px;
+  color: #0c0a09;
+}
+
+.btn1:hover {
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #e82525;
+  border-left: 1px solid #e82525;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gallery {
+  padding-left: 10px;
+}
+
+.gallery__btn {
+  all: unset;
+  font-size: 15px;
+  padding: 10px;
+  background: rgb(255 255 255 / 100%);
+  color: var(--main-color);
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.inner__gallery_name {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+  color: var(--main-color);
+  z-index: 10;
+  transition: 0.25s ease;
+}
+.inner__gallery_name:hover {
+  color: hsl(var(--primary) / 1);
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.gallery__btn::before,
+.gallery__btn::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background-color: inherit;
+  border-radius: inherit;
+  background-image: conic-gradient(
+    from var(--angle) at 50% 50%,
+    transparent 0%,
+    transparent 33%,
+    hsl(0, 100%, 50%),
+    transparent 66%,
+    transparent 100%
+  );
+  animation: rotate 2s infinite linear;
+  z-index: -1;
+}
+
+.gallery__btn::before {
+  filter: blur(15px);
+}
+
+.gallery__inner {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    100px circle at var(--mouseX) var(--mouseY),
+    hsl(var(--primary) / 0.3),
+    transparent 50%
+  );
+  border-radius: inherit;
+  z-index: 0;
+  opacity: 0;
+}
+.gallery__btn:hover .gallery__inner {
+  opacity: 1;
+}
+
+@keyframes rotate {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
