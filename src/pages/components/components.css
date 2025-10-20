@@ -1,0 +1,666 @@
+.luxury-page {
+  min-height: 100vh;
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.luxury-hero {
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 120px 20px 20px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #333;
+  flex-shrink: 0;
+}
+
+.luxury-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.brand-watermark {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.luxury-title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin: 0 0 15px 0;
+  letter-spacing: -0.5px;
+}
+
+.luxury-subtitle {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #ccc;
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+}
+
+.luxury-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.luxury-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin: 0 0 15px 0;
+  color: #1a1a1a;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
+  font-weight: 300;
+}
+
+.luxury-gallery-section {
+  margin-bottom: 80px;
+}
+
+.luxury-gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.featured-luxury-image, .luxury-gallery-item {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-luxury-image:hover, .luxury-gallery-item:hover {
+  border-color: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.featured-luxury-image {
+  min-height: 400px;
+  position: relative;
+}
+
+.luxury-gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.luxury-gallery-item {
+  min-height: 190px;
+  position: relative;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.featured-luxury-image:hover .gallery-image,
+.luxury-gallery-item:hover .gallery-image {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.featured-luxury-image:hover .image-overlay,
+.luxury-gallery-item:hover .image-overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.image-title {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.image-desc {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.zoom-hint {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #fff;
+  justify-content: center;
+}
+
+.luxury-features-section {
+  margin-bottom: 80px;
+}
+
+.luxury-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+  gap: 30px;
+}
+
+.luxury-feature-category {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+.luxury-feature-category:hover {
+  border-color: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.category-header h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.luxury-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.luxury-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.luxury-cta-section {
+  display: flex;
+  justify-content: center;
+}
+
+.luxury-pricing-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 50px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.pricing-header {
+  margin-bottom: 40px;
+}
+
+.pricing-header h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  color: #1a1a1a;
+}
+
+.pricing-header p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.pricing-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.pricing-option {
+  text-align: center;
+}
+
+.price-amount {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+}
+
+.price-period {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.room-type {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 400;
+}
+
+.pricing-divider {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.luxury-btn {
+  padding: 15px 30px;
+  border: 1px solid #1a1a1a;
+  background: #1a1a1a;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.luxury-btn.primary {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.luxury-btn.primary:hover {
+  background: #333;
+}
+
+.luxury-btn.secondary {
+  background: transparent;
+  color: #1a1a1a;
+}
+
+.luxury-btn.secondary:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.gallery-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 40px;
+}
+
+.modal-content {
+  background: #fff;
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  font-size: 2rem;
+  color: #1a1a1a;
+  cursor: pointer;
+  z-index: 1001;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.modal-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+  min-height: 60vh;
+  padding: 40px;
+}
+
+.modal-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-image-content {
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.nav-button {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e0e0e0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0 20px;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1001;
+}
+
+.nav-button.prev {
+  left: 20px;
+}
+
+.nav-button.next {
+  right: 20px;
+}
+
+.nav-button:hover {
+  background: #1a1a1a;
+  color: #fff;
+  border-color: #1a1a1a;
+}
+
+.modal-caption {
+  padding: 30px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  background: #fff;
+}
+
+.modal-caption h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+.modal-caption p {
+  margin: 0 0 15px 0;
+  color: #666;
+}
+
+.image-counter {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+@media (max-width: 1200px) {
+  .luxury-container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .luxury-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .luxury-feature-category {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .luxury-gallery {
+    grid-template-columns: 1fr;
+  }
+  
+  .luxury-gallery-grid {
+    grid-template-columns: 2, 1fr;
+  }
+  
+  .luxury-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .luxury-feature-category {
+    padding: 25px;
+  }
+  
+  .category-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  
+  .pricing-options {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+  }
+  
+  .luxury-title {
+    font-size: 2.5rem;
+  }
+  
+  .luxury-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .luxury-indicators {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .gallery-modal {
+    padding: 20px;
+  }
+  
+  .modal-image-container {
+    padding: 20px;
+    min-height: 50vh;
+  }
+  
+  .nav-button {
+    position: relative;
+    margin: 10px;
+    top: auto;
+    transform: none;
+  }
+  
+  .nav-button.prev,
+  .nav-button.next {
+    position: relative;
+    left: auto;
+    right: auto;
+  }
+  
+  .featured-luxury-image {
+    min-height: 300px;
+  }
+  
+  .luxury-gallery-item {
+    min-height: 150px;
+  }
+  
+  .modal-image-content {
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .luxury-hero {
+    padding: 100px 20px 60px;
+  }
+  
+  .luxury-title {
+    font-size: 2rem;
+  }
+  
+  .luxury-subtitle {
+    font-size: 1rem;
+  }
+  
+  .luxury-container {
+    padding: 40px 15px;
+  }
+  
+  .luxury-feature-category {
+    padding: 20px;
+  }
+  
+  .luxury-feature-item {
+    font-size: 0.9rem;
+  }
+  
+  .luxury-pricing-card {
+    padding: 30px 20px;
+  }
+  
+  .price-amount {
+    font-size: 1.7rem;
+  }
+  
+  .modal-content {
+    max-width: 95vw;
+    max-height: 95vh;
+  }
+  
+  .modal-image {
+    padding: 10px;
+  }
+  
+  .modal-image-content {
+    max-height: 40vh;
+  }
+  
+  .image-title {
+    font-size: 1rem;
+  }
+  
+  .image-desc {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .luxury-title {
+    font-size: 1.8rem;
+  }
+  
+  .luxury-feature-category {
+    padding: 15px;
+  }
+  
+  .luxury-feature-list {
+    gap: 12px;
+  }
+  
+  .luxury-btn {
+    padding: 12px 20px;
+    font-size: 0.85rem;
+  }
+  
+  .featured-luxury-image {
+    min-height: 250px;
+  }
+  
+  .luxury-gallery-item {
+    min-height: 120px;
+  }
+}
