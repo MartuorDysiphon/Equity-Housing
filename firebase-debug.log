@@ -1,0 +1,163 @@
+[debug] [2025-10-20T21:27:25.245Z] ----------------------------------------------------------------------
+[debug] [2025-10-20T21:27:25.247Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\katle\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-10-20T21:27:25.247Z] CLI Version:   14.20.0
+[debug] [2025-10-20T21:27:25.248Z] Platform:      win32
+[debug] [2025-10-20T21:27:25.248Z] Node Version:  v25.0.0
+[debug] [2025-10-20T21:27:25.248Z] Time:          Mon Oct 20 2025 23:27:25 GMT+0200 (South Africa Standard Time)
+[debug] [2025-10-20T21:27:25.248Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\katle\OneDrive\Documentos\Software Development\equity_housing
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-10-20T21:27:35.290Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-20T21:27:35.290Z] > authorizing via signed-in user (katlegojohnson30@gmail.com)
+[debug] [2025-10-20T21:27:46.516Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:27:46.516Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:27:46.518Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-10-20T21:27:46.518Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"equity_housing"}
+[debug] [2025-10-20T21:27:46.981Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 400
+[debug] [2025-10-20T21:27:46.981Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT"}}
+[debug] [2025-10-20T21:27:46.982Z] Couldn't check if project ID equity_housing is available. Original error: FirebaseError: Failed to check if project ID is available. See firebase-debug.log for more info.
+[debug] [2025-10-20T21:27:49.053Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:27:49.053Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:27:49.053Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-10-20T21:27:49.053Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"equity_housing","name":"equity_housing"}
+[debug] [2025-10-20T21:27:50.888Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2025-10-20T21:27:50.889Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"},{"field":"display_name","description":"project display name contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2025-10-20T21:27:51.258Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (C:\Users\katle\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\katle\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2025-10-20T21:29:14.338Z] ----------------------------------------------------------------------
+[debug] [2025-10-20T21:29:14.339Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\katle\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-10-20T21:29:14.340Z] CLI Version:   14.20.0
+[debug] [2025-10-20T21:29:14.340Z] Platform:      win32
+[debug] [2025-10-20T21:29:14.340Z] Node Version:  v25.0.0
+[debug] [2025-10-20T21:29:14.340Z] Time:          Mon Oct 20 2025 23:29:14 GMT+0200 (South Africa Standard Time)
+[debug] [2025-10-20T21:29:14.340Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\katle\OneDrive\Documentos\Software Development\equity_housing
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-10-20T21:29:21.896Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-20T21:29:21.896Z] > authorizing via signed-in user (katlegojohnson30@gmail.com)
+[debug] [2025-10-20T21:30:12.326Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:30:12.327Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:30:12.329Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-10-20T21:30:12.329Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"equityres"}
+[debug] [2025-10-20T21:30:13.214Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-10-20T21:30:13.214Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_UNAVAILABLE","suggestedProjectId":"equityres-27b0b"}
+[debug] [2025-10-20T21:30:25.096Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:30:25.096Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:30:25.097Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-10-20T21:30:25.097Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"equityresidences"}
+[debug] [2025-10-20T21:30:25.793Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-10-20T21:30:25.793Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_UNAVAILABLE","suggestedProjectId":"equityresidences-fe630"}
+[debug] [2025-10-20T21:30:46.464Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:30:46.464Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:30:46.465Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-10-20T21:30:46.465Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"equityhousingbloemfontein"}
+[debug] [2025-10-20T21:30:47.291Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-10-20T21:30:47.291Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"equityhousingbloemfontein"}
+[debug] [2025-10-20T21:30:49.707Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:30:49.707Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:30:49.707Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-10-20T21:30:49.707Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"equityhousingbloemfontein","name":"equityhousingbloemfontein"}
+[debug] [2025-10-20T21:30:51.417Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-10-20T21:30:51.417Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.6692895221193114810"}
+[debug] [2025-10-20T21:30:51.418Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:30:51.418Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:30:51.418Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6692895221193114810 [none]
+[debug] [2025-10-20T21:30:52.851Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6692895221193114810 200
+[debug] [2025-10-20T21:30:52.851Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6692895221193114810 {"name":"operations/create_project.global.6692895221193114810","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"156277809301","projectId":"equityhousingbloemfontein","lifecycleState":"ACTIVE","name":"equityhousingbloemfontein","createTime":"2025-10-20T21:30:50.990150Z"}}
+[debug] [2025-10-20T21:30:52.852Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:30:52.852Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:30:52.852Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/equityhousingbloemfontein:addFirebase [none]
+[debug] [2025-10-20T21:30:54.244Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/equityhousingbloemfontein:addFirebase 403
+[debug] [2025-10-20T21:30:54.244Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/equityhousingbloemfontein:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-10-20T21:30:54.244Z] Request to https://firebase.googleapis.com/v1beta1/projects/equityhousingbloemfontein:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2025-10-20T21:30:54.624Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/equityhousingbloemfontein:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\katle\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\katle\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
+[debug] [2025-10-20T21:31:15.429Z] ----------------------------------------------------------------------
+[debug] [2025-10-20T21:31:15.431Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\katle\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-10-20T21:31:15.431Z] CLI Version:   14.20.0
+[debug] [2025-10-20T21:31:15.431Z] Platform:      win32
+[debug] [2025-10-20T21:31:15.432Z] Node Version:  v25.0.0
+[debug] [2025-10-20T21:31:15.432Z] Time:          Mon Oct 20 2025 23:31:15 GMT+0200 (South Africa Standard Time)
+[debug] [2025-10-20T21:31:15.432Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\katle\OneDrive\Documentos\Software Development\equity_housing
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-10-20T21:31:21.071Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-20T21:31:21.071Z] > authorizing via signed-in user (katlegojohnson30@gmail.com)
+[debug] [2025-10-20T21:31:32.342Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:31:32.342Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:31:32.343Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-10-20T21:31:32.343Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"dimatone_equity"}
+[debug] [2025-10-20T21:31:32.739Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 400
+[debug] [2025-10-20T21:31:32.739Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT"}}
+[debug] [2025-10-20T21:31:32.739Z] Couldn't check if project ID dimatone_equity is available. Original error: FirebaseError: Failed to check if project ID is available. See firebase-debug.log for more info.
+[debug] [2025-10-20T21:31:34.119Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:31:34.120Z] Checked if tokens are valid: true, expires at: 1760998640557
+[debug] [2025-10-20T21:31:34.120Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-10-20T21:31:34.120Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"dimatone_equity","name":"dimatone_equity"}
+[debug] [2025-10-20T21:31:35.744Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2025-10-20T21:31:35.744Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"},{"field":"display_name","description":"project display name contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2025-10-20T21:31:36.206Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (C:\Users\katle\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\katle\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.

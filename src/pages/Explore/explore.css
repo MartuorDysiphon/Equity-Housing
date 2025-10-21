@@ -6,11 +6,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-
-    @media (max-width: 992px) {
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-    }
+  justify-items: center;
+  
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
 
 .room__card {
